@@ -6,7 +6,7 @@ This is a mod for the game of Don't Starve Together which is available in the St
 
 System announce upon boss killing and players will say how many days left before the hounds or worm attack arrive.
 
-Use this mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1817697604] Multi-World Boss Announcement [/url] if you are holding a multi-world server.
+Use this mod [Multi-World Boss Announcement](https://steamcommunity.com/sharedfiles/filedetails/?id=1817697604) if you are holding a multi-world server.
 
 ## Changelog
 
