@@ -11,6 +11,7 @@ Use this mod [Multi-World Boss Announcement](https://steamcommunity.com/sharedfi
 ## Changelog
 
 **List of tweaks I made for version 1.1.2**
+
 	- Klaus Sack will announce upon appearing.
 
 ## License
