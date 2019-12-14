@@ -10,6 +10,9 @@ Use this mod [Multi-World Boss Announcement](https://steamcommunity.com/sharedfi
 
 ## Changelog
 
+**List of tweaks I made for version 1.1.2**
+	- Klaus Sack will announce upon appearing.
+
 ## License
 
 Released under the [GNU GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html)
