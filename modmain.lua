@@ -208,3 +208,55 @@ end
 
 AddPrefabPostInit("world", HoundAttack)
 AddPrefabPostInit("cave", WormAttack)
+
+--🐟宣告
+
+local function fishname(fish)
+    if lang == "zh" then
+        if fish == "oceanfish_small_1_inv" then return "小古比鱼"
+        elseif fish == "oceanfish_small_2_inv" then return "米诺鱼"
+        elseif fish == "oceanfish_small_3_inv" then return "小饵鱼"
+        elseif fish == "oceanfish_small_4_inv" then return "小鲑鱼"
+        elseif fish == "oceanfish_small_5_inv" then return "波普尔鱼"
+        elseif fish == "oceanfish_medium_1_inv" then return "泥鱼"
+        elseif fish == "oceanfish_medium_2_inv" then return "深海鲈鱼"
+        elseif fish == "oceanfish_medium_2_inv" then return "华丽狮子鱼"
+        elseif fish == "oceanfish_medium_2_inv" then return "黑鲇鱼"
+        elseif fish == "oceanfish_medium_2_inv" then return "玉米鳕鱼"
+        end
+    else
+        if fish == "oceanfish_small_1_inv" then return "Runty Guppy"
+        elseif fish == "oceanfish_small_2_inv" then return "Needlenosed Squirt"
+        elseif fish == "oceanfish_small_3_inv" then return "Bitty Baitfish"
+        elseif fish == "oceanfish_small_4_inv" then return "Smolt Fry"
+        elseif fish == "oceanfish_small_5_inv" then return "Popperfish"
+        elseif fish == "oceanfish_medium_1_inv" then return "Mudfish"
+        elseif fish == "oceanfish_medium_2_inv" then return "Deep Bass"
+        elseif fish == "oceanfish_medium_2_inv" then return "Dandy Lionfish"
+        elseif fish == "oceanfish_medium_2_inv" then return "Black Catfish"
+        elseif fish == "oceanfish_medium_2_inv" then return "Corn Cod"
+        end
+    end
+end
+
+local function fish_announce(inst)
+        inst:ListenForEvent("onnewtrophy", function()
+            if inst.components.trophyscale.item_data ~= nil then
+                local data = inst.components.trophyscale.item_data
+                local fish_owner = data.owner_name
+                local fish_weight = string.format(data.weight)
+                local fish_name = data.prefab
+                if fish_owner ~= nil and fish_weight ~= nil and fish_name ~= nil then
+                    if lang == "zh" then
+                        TheNet:Announce(trophy.."恭喜".."〖 "..fish_owner.." 〗".."抓了一条重"..fish_weight.."盎司的".."〖 "..fishname(fish_name).." 〗"..trophy)
+                    else
+                        TheNet:Announce(trophy.."Congratulations:".."〖 "..fish_owner.." 〗".."cought a "..fish_weight.."-ounce".."〖 "..fishname(fish_name)" 〗"..trophy)
+                    end
+                end
+            end
+        end)
+end
+
+if GetModConfigData("is_fish_announce") then
+	AddPrefabPostInit("trophyscale_fish", fish_announce)
+end
