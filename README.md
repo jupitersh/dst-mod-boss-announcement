@@ -12,7 +12,7 @@ Use this mod [Multi-World Boss Announcement](https://steamcommunity.com/sharedfi
 
 ## Changelog
 
-**List of tweaks I made for version 1.1.2**
+**List of tweaks I made for version 1.3.0**
 	
 	- Added announce when a fish was put in the Fish Scale-O-Matic.
 
