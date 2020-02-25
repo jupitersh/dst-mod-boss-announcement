@@ -246,7 +246,7 @@ local function fish_announce(inst)
                 local fish_owner = data.owner_name
                 local fish_weight = string.format(data.weight)
                 local fish_name = data.prefab
-                if fish_owner ~= nil and fish_weight ~= nil and fish_name ~= nil then
+                if fish_owner ~= nil and fish_weight ~= nil and fish_name ~= nil and fishname(fish_name) ~= nil then
                     if lang == "zh" then
                         TheNet:Announce(trophy.."恭喜".."〖 "..fish_owner.." 〗".."抓了一条重"..fish_weight.."盎司的".."〖 "..fishname(fish_name).." 〗"..trophy)
                     else
