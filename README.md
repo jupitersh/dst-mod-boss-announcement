@@ -12,13 +12,18 @@ Use this mod [Multi-World Boss Announcement](https://steamcommunity.com/sharedfi
 
 ## Changelog
 
-**List of tweaks I made for version 1.3.0**
-	
-	- Added announce when a fish was put in the Fish Scale-O-Matic.
+### Version 1.3.2
+    
+- Removed fish announcement.
+- Add kill announcement and respawning announcement for the new boss of crab king.
 
-**List of tweaks I made for version 1.1.2**
+### Version 1.3.0
+    
+- Added announce when a fish was put in the Fish Scale-O-Matic.
 
-	- Klaus Sack will announce upon appearing.
+### Version 1.1.2
+
+- Klaus Sack will announce upon appearing.
 
 ## License
 
